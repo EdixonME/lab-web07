@@ -1,10 +1,11 @@
 <div class = "item" >
   <ul>
     <li>
-      <a [routerLink]= "['/articulos',indice]"
-          [queryParams] = "{modoEdicion:'1'}">
+      <a style="text-decoration: none;"
+        [routerLink]= "['/articulos',indice]"
+        [queryParams] = "{modoEdicion:'1'}">
     
-        {{indice + 1}} : {{articulo.nombre}} cantidad: {{articulo.cantidad}} precio : {{articulo.preciounitario}}
+        <p class = "my-punter">{{indice + 1}} : {{articulo.nombre}} <span>   SubTotal : {{articulo.preciounitario*articulo.cantidad}}</span> </p>
       </a>
     </li>
   </ul>

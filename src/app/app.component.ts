@@ -10,7 +10,7 @@ import { ArticulosService } from './articulo.service';
 })
 
 export class AppComponent  {
-  titulo = 'Listado de compras';
+  titulo = 'Carrito de Compras';
   
 
 }
