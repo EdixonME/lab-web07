@@ -1,0 +1,27 @@
+
+     
+<div class = "box">
+    <form class="item" #f = "ngForm" (ngSubmit)= "f.form.valid && onGuardarArticulo() ">
+      
+      <div class= "input-flex">
+      <input type="text" name = "nombre" id = "nombre" placeholder="Nombre"
+      [(ngModel)] = "nombreInput" requiered/>
+      
+  
+      <input type="number" name = "cantidad" id = "cantidad" placeholder="cantidad"
+        [(ngModel)] = "cantidadInput" required/>
+      
+      <input type="number" name = "precio" id = "precio" placeholder="precio"
+           [(ngModel)] = "precioInput" required/>
+      
+      </div>
+      
+        <button type ="submit" style = "cursor:pointer" >+</button>
+
+        <button *ngIf = "index != null" type = "submit" style="cursor :pointer"
+        class = "buttonRed"
+        (click) = " eliminarArticulo()">-</button>
+      
+  
+    </form>
+</div>

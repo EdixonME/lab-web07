@@ -1,0 +1,31 @@
+
+
+ <div style="text-align:center">
+    <button style= "cursor : pinter" (click)="agregar()">+</button>
+
+</div>
+
+
+<div class = "box">
+  <app-articulo
+  *ngFor = "let articuloElemento of articulos; let i = index "
+  [articulo]="articuloElemento"
+  [indice]="i"
+  >
+    
+  </app-articulo>
+</div>
+<router-outlet></router-outlet>
+
+<div class = "box">
+  <div class="item"><p> Precio Total : {{sumarTotal()}}</p></div>
+  
+</div>
+
+
+  
+   
+    
+
+
+

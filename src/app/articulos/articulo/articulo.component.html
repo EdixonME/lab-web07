@@ -1,0 +1,15 @@
+<div class = "item" >
+  <ul>
+    <li>
+      <a [routerLink]= "['/articulos',indice]"
+          [queryParams] = "{modoEdicion:'1'}">
+    
+        {{indice + 1}} : {{articulo.nombre}} cantidad: {{articulo.cantidad}} precio : {{articulo.preciounitario}}
+      </a>
+    </li>
+  </ul>
+</div>  
+
+
+
+
